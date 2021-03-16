@@ -3,17 +3,11 @@ import React, {useState} from 'react'
 function Tomi() {
 
     const [hour,setHour] = useState(0.000)
-    const [day,setDay] = useState(0.000)
-    const [onday,setonDay] = useState(0.00)
   
     const onChange = (e) => {
       let inputVal = e.target.value
-      let dayVal = inputVal * 0.1
       let hourVal = inputVal * 0.002
-      let ondayVal = inputVal * 0.0005
-      setDay(dayVal)
       setHour(hourVal)
-      setonDay(ondayVal)
     }
 
     return (
@@ -23,7 +17,7 @@ function Tomi() {
             <div className="d-flex align-items-center mb-4 icon-container balance">
               <div className="card-header-image position-relative pb-0">
                 <div className="trx-icon stake-icon-content">
-                  <img src="./images/tominejo.png" className="stake-icon" />
+                  <img src="./images/tron.svg" className="stake-icon" alt="#"/>
                 </div>
                 <span className="card-header-text  bg-transparent font-weight-bold text-white">
                   BUY TOMI
