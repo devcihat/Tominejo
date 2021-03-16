@@ -30,7 +30,7 @@ function Home() {
               <p className="text  home-trx font-weight-bold">0 TRX</p>
             </div>
             <div className="col-xl-4 order-xl-1 col-md-4 order-12 mb-5 text-center position-relative">
-              <img src="./images/tominejo.jpg" className="icon-bird" />
+              <img src="./images/tominejo.jpg" className="icon-bird" alt="bird" />
             </div>
             <div className="col-xl-4 home-total col-md-4 order-md-5 d-flex text-center flex-column justify-content-center align-items-center align-self-xl-start mt-xl-5 pt-xl-5">
               <p className="text mb-1  text-cyan-dark font-weight-bold">

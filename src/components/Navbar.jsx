@@ -8,12 +8,14 @@ function Navbar() {
       className="navbar navbar-light navbar-expand-lg  "
     >
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <NavLink className="navbar-brand" to="/">
           <div className="d-flex">
-            <img className="nav-img" src="./images/tominejo.png" />
-            <p style={{ color:"black" }} className="pt-3"><b>TOMI</b></p>
+            <img className="nav-img" src="./images/tominejo.png" alt="bird" />
+            <p style={{ color: "black" }} className="pt-3">
+              <b>TOMI</b>
+            </p>
           </div>
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -27,74 +29,72 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li style={{ textDecoration:"none" }} className="nav-item">
-              <NavLink to="/home">
-              <a className="nav-link mx-3 " href="#">
+            <li style={{ textDecoration: "none" }} className="nav-item">
+              <NavLink className="nav-link mx-3 " to="/">
                 HOME
-              </a>
               </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link mx-3" href="#">
+              <NavLink className="nav-link mx-3" to="/">
                 APE DICE
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link mx-3" href="#">
+              <NavLink className="nav-link mx-3" to="/">
                 WHITEPAPER
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link mx-3" href="#">
+              <NavLink className="nav-link mx-3" to="/">
                 JUST SWAP
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item dropdown">
-              <a
+              <NavLink
                 className="nav-link dropdown-toggle"
-                href="#"
+                to="/"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 AUDITS
-              </a>
+              </NavLink>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink className="dropdown-item" to="/">
                     Action
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink className="dropdown-item" to="/">
                     Another action
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink className="dropdown-item" to="/">
                     Something else here
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </li>
           </ul>
           <form className="d-flex">
-            <NavLink to="###">
-              <a>
-              <img
-                className="mx-2"
-                src="https://apetron.com/_nuxt/3e5378bfd937308591b5cc281156826d.svg"
-              />
-              </a>
+            <NavLink to="/">
+              <NavLink to="/">
+                <img
+                  className="mx-2"
+                  src="https://apetron.com/_nuxt/3e5378bfd937308591b5cc281156826d.svg"
+                  alt="/"
+                />
+              </NavLink>
             </NavLink>
-            <NavLink to="###">
-              <a>
-              <img src="https://apetron.com/_nuxt/f1a23ee63dadc88fd04b3a1d62361e84.svg" />
-              </a>
+
+            <NavLink to="/">
+              <img src="https://apetron.com/_nuxt/f1a23ee63dadc88fd04b3a1d62361e84.svg" alt="bird" />
             </NavLink>
           </form>
         </div>

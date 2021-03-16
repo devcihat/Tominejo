@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom"
 
 
 function Footer() {
@@ -72,12 +73,12 @@ function Footer() {
                 <p className="text mb-3 mb-sm-4 staking-text font-helvetica">
                   Total Referrals: 0
                 </p>
-                <a
-                  href="#"
+                <NavLink
+                  to="/"
                   className="text-info-gradient gradient-border withdraw-btn text-orange mt-2 fz-16 text-uppercase mb-0 pt-0 pb-1 font-helvetica"
                 >
                   Statistics
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>

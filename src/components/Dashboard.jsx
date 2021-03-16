@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom"
 
 function Dashboard() {
   // const [change, setChange] = useState(100);
@@ -25,7 +26,7 @@ function Dashboard() {
             <div className="d-flex align-items-center mb-4 icon-container balance">
               <div className="card-header-image position-relative pb-0">
                 <div className="trx-icon stake-icon-content">
-                  <img src="./images/tominejo.png" className="stake-icon" />
+                  <img src="./images/tominejo.png" className="stake-icon" alt="bird" />
                 </div>
                 <span className="card-header-text  bg-transparent font-weight-bold text-white">
                   Stake TRX
@@ -105,12 +106,12 @@ function Dashboard() {
               >
                 STAKE TRX
               </button>
-              <a
-                href="#"
+              <NavLink
+                to="/"
                 className="btn gradient-border withdraw-btn fz-16 mb-3 mt-5 mb-sm-4 fin-stats"
               >
                 Financial Statistics
-              </a>
+              </NavLink>
             </form>
           </div>
         </div>
@@ -118,7 +119,7 @@ function Dashboard() {
           <div className="card card-stake card-height card-liberti">
             <div className="card-header-image position-relative icon-container balance-light">
               <div className="trx-icon stake-icon-content-second">
-                <img src="./images/tominejo.png" className="stake-icon mr-0" />
+                <img src="./images/tominejo.png" className="stake-icon mr-0" alt="bird" />
               </div>
               <span className="card-header-text bg-transparent font-weight-bold">
                 Mining Dashboard
@@ -181,12 +182,12 @@ function Dashboard() {
                 CLAIM REWARD
               </button>
               <div className="line"></div>
-              <a
-                href="#"
+              <NavLink
+                to="/"
                 className="text-info-gradient gradient-border mb-3 mb-sm-4 p-0 withdraw-btn fz-16 text-orange text-uppercase"
               >
                 WITHDRAWAL STATISTICS
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>

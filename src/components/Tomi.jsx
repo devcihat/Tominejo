@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { NavLink } from "react-router-dom"
 
 function Tomi() {
 
@@ -73,12 +74,12 @@ function Tomi() {
               >
                 BUY
               </button>
-              <a
-                href="#"
+              <NavLink
+                to="/"
                 className="btn gradient-border withdraw-btn fz-16 mb-3 mt-5 mb-sm-4 fin-stats"
               >
                 Financial Statistics
-              </a>
+              </NavLink>
             </form>
           </div>
           </div>
